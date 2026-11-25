@@ -1,6 +1,6 @@
 # Four-speaker ten-minute presentation
 
-12 slides,600 seconds;A/B/C/D each150 seconds. Replace letters with names. Rehearse at about140 spoken seconds per speaker,leaving ten seconds for pauses and transitions.
+12 slides, 600 seconds; A/B/C/D each 150 seconds. Replace letters with names. Rehearse at about 140 spoken seconds per speaker, leaving ten seconds for pauses and transitions.
 
 |Speaker|Slides|Time|Topic|
 |---|---|---|---|
@@ -9,7 +9,7 @@
 |C|7–9|5:00–7:30|Distillation and E16|
 |D|10–12|7:30–10:00|Follow-up,analysis,conclusions|
 
-## 1. Qwen 3-8 B on HypoSpace
+## 1. Qwen3-8B on HypoSpace
 
 Speaker A; 35 seconds; 0:00–0:35
 
@@ -42,7 +42,7 @@ Speaker A; 60 seconds; 0:35–1:35
 
 ### Speaker notes
 
-HypoSpace constructs observations and exhaustively enumerates compatible mechanisms. We use causal graphs, 3 D structures, and Boolean expressions. Suppose the valid set contains A, B, and C. Four copies of A achieve perfect validity but recover only one-third of the set. NR measures distinct parseable outcomes, and can increase because of different wrong answers; RR is therefore essential. We separate task families before building multiple training answers, and compare models on the same tasks and budgets. Mechanism identity also matters: logical equivalence is not always the benchmark’s definition of the same Boolean mechanism.
+HypoSpace constructs observations and exhaustively enumerates compatible mechanisms. We use causal graphs, 3D structures, and Boolean expressions. Suppose the valid set contains A, B, and C. Four copies of A achieve perfect validity but recover only one-third of the set. NR measures distinct parseable outcomes, and can increase because of different wrong answers; RR is therefore essential. We separate task families before building multiple training answers, and compare models on the same tasks and budgets. Mechanism identity also matters: logical equivalence is not always the benchmark’s definition of the same Boolean mechanism.
 
 Sources/evidence: HypoSpace repository; strict GT scorer src/reward.py
 
@@ -64,7 +64,7 @@ Speaker A; 55 seconds; 1:35–2:30
 
 ### Speaker notes
 
-We first worried that an 8 B model would score too poorly to distinguish methods. The eight-condition comparison showed meaningful headroom once thinking was enabled. The default DSH wrapper did not consistently improve recovery, and successful candidates usually involved only one model step. That constrains this wrapper configuration, not all iterative search methods. These early tests used smaller tasks, history-conditioned generation, andN equal to ground-truth multiplicity. Later absolute scores must not be compared directly. This baseline motivated continuing with 8 B rather than simply switching to a larger model. SpeakerB will now explain the reward-based attempts.
+We first worried that an 8B model would score too poorly to distinguish methods. The eight-condition comparison showed meaningful headroom once thinking was enabled. The default DSH wrapper did not consistently improve recovery, and successful candidates usually involved only one model step. That constrains this wrapper configuration, not all iterative search methods. These early tests used smaller tasks, history-conditioned generation, andN equal to ground-truth multiplicity. Later absolute scores must not be compared directly. This baseline motivated continuing with 8B rather than simply switching to a larger model. SpeakerB will now explain the reward-based attempts.
 
 Sources/evidence: Early inference reportE02; @deepseek-ai/dsh0.2.2-rc.1 engineering baseline
 
@@ -107,7 +107,7 @@ Speaker B; 45 seconds; 3:20–4:05
 
 ### Speaker notes
 
-MS-TTRL separates correctness estimation from generation frequency. The policy verifies candidate outcomes, while frequency promotes rare reliable solutions. Our teammate has a preliminary comparison at epoch 10, seed 1337, on 18 Boolean and causal tasks. MS-TTRL has the highest validity, but its recovery does not beat Base, and majority TTRL has the best coverage here. Verification also makes training roughly five to ten times slower. Since 3 D evaluation and additional seeds remain incomplete, we report a working training chain and partial evidence, not reproduction of the paper’s large headline gains.
+MS-TTRL separates correctness estimation from generation frequency. The policy verifies candidate outcomes, while frequency promotes rare reliable solutions. Our teammate has a preliminary comparison at epoch 10, seed 1337, on 18Boolean and causal tasks. MS-TTRL has the highest validity, but its recovery does not beat Base, and majority TTRL has the best coverage here. Verification also makes training roughly five to ten times slower. Since 3D evaluation and additional seeds remain incomplete, we report a working training chain and partial evidence, not reproduction of the paper’s large headline gains.
 
 Sources/evidence: Zhang et al.,MS-TTRL https://arxiv.org/abs/2610.32234 ; docs/MS_TTRL_STAGE.md
 
@@ -124,7 +124,7 @@ Speaker B; 55 seconds; 4:05–5:00
 
 ### Speaker notes
 
-Verification introduces a second boundary. Some Boolean expressions satisfy observations but fall outside the finite reference grammar. In 3 D, revising representation and parsing increased confirmed valid structures from 4 to 24 out of 26, on the same observed training candidates. That is a diagnostic repair, not independent generalization. The paper publicly provides major settings; our teammate’s training scale, epoch 10 checkpoint, N 4 evaluation, and fixed voting denominator already differ from the paper or current code. We should align these before attributing the reproduction gap to missing details. SpeakerC will now explain why we moved from rewards to process distillation.
+Verification introduces a second boundary. Some Boolean expressions satisfy observations but fall outside the finite reference grammar. In 3D, revising representation and parsing increased confirmed valid structures from 4 to 24 out of 26, on the same observed training candidates. That is a diagnostic repair, not independent generalization. The paper publicly provides major settings; our teammate’s training scale, epoch 10 checkpoint, N 4 evaluation, and fixed voting denominator already differ from the paper or current code. We should align these before attributing the reproduction gap to missing details. SpeakerC will now explain why we moved from rewards to process distillation.
 
 Sources/evidence: MS-TTRL AppendixB/C and official README; teammate stage report
 
@@ -163,7 +163,7 @@ Speaker C; 50 seconds; 5:45–6:35
 
 ### Speaker notes
 
-DRP suggests editing student reasoning before distillation. We adapted that idea with mechanism checks and targeted multi-outcome augmentation. The first attempt shortened outputs but harmed both validity and coverage. We then examined NF 4 versus BF 16 deployment, and compared four process types with two ending-token weights, plus an answer-only control. A 12-task development screen selected diverse_w. The selected model uses 48 families, 144 QA pairs, 72 updates, and a threefold weight on end-of-thinking and EOS tokens. This combines editing, repair, and augmentation; we cannot attribute the eventual result exclusively to pruning sentences.
+DRP suggests editing student reasoning before distillation. We adapted that idea with mechanism checks and targeted multi-outcome augmentation. The first attempt shortened outputs but harmed both validity and coverage. We then examined NF4 versus BF16 deployment, and compared four process types with two ending-token weights, plus an answer-only control. A 12-task development screen selected diverse_w. The selected model uses 48 families, 144 QA pairs, 72 updates, and a threefold weight on end-of-thinking and EOS tokens. This combines editing, repair, and augmentation; we cannot attribute the eventual result exclusively to pruning sentences.
 
 Sources/evidence: Jiang et al.,DRP https://aclanthology.org/2026.findings-acl.196/ ; E10–E15
 
@@ -186,7 +186,7 @@ Speaker C; 55 seconds; 6:35–7:30
 
 ### Speaker notes
 
-This is our primary result. The checkpoint was selected before freezing 36 unseen task families, with four samples per task. At the 8, 192-token cap, recovery rises from 15.57 to 18.28, and mean output falls from 5, 303 to 3, 846, a 27.5 percent reduction. The token-difference interval lies clearly below zero. The RR interval crosses zero, and its adjusted p-value is 0.258, so we call it a positive coverage signal, not a significant improvement. In 3 D, validity improves while coverage is unchanged, again separating validity from diversity. SpeakerD will explain the longer-budget and larger-scale follow-up.
+This is our primary result. The checkpoint was selected before freezing 36 unseen task families, with four samples per task. At the 8, 192-token cap, recovery rises from 15.57 to 18.28, and mean output falls from 5, 303 to 3, 846, a 27.5 percent reduction. The token-difference interval lies clearly below zero. The RR interval crosses zero, and its adjusted p-value is 0.258, so we call it a positive coverage signal, not a significant improvement. In 3D, validity improves while coverage is unchanged, again separating validity from diversity. SpeakerD will explain the longer-budget and larger-scale follow-up.
 
 Sources/evidence: E16 results/e16/summary.json; token intervals are unadjusted secondary analyses
 
@@ -208,7 +208,7 @@ Speaker D; 50 seconds; 7:30–8:20
 
 ### Speaker notes
 
-At 40, 960 tokens, E 16 still saves 23.9 percent, but its RR advantage becomes smaller and remains unconfirmed. We also scanned learning rate and answer weighting, and expanded to 192 families, three training seeds, and 96 new held-out tasks. The expanded mean is slightly above Base, but not significant after correction, and does not exceed the earlier 48-family model. At 40 K, its token savings almost disappear. Aggressive learning rates produced either empty reasoning with wrong answers or very long incorrect traces. More updates, data, and tokens are not automatic gains. Rows here are within-experiment comparisons, not a cross-dataset ranking.
+At 40, 960 tokens, E16 still saves 23.9 percent, but its RR advantage becomes smaller and remains unconfirmed. We also scanned learning rate and answer weighting, and expanded to 192 families, three training seeds, and 96 new held-out tasks. The expanded mean is slightly above Base, but not significant after correction, and does not exceed the earlier 48-family model. At 40K, its token savings almost disappear. Aggressive learning rates produced either empty reasoning with wrong answers or very long incorrect traces. More updates, data, and tokens are not automatic gains. Rows here are within-experiment comparisons, not a cross-dataset ranking.
 
 Sources/evidence: E16; results/secondary/final96_summary.json; aggressive-LR failure auditE23
 
@@ -242,7 +242,7 @@ Speaker D; 45 seconds; 9:15–10:00
 
 ### Speaker notes
 
-Our contribution is an auditable chain of experiments. Group-aware rewards work on lists; E 16 clearly compresses outputs and gives a positive but unconfirmed coverage signal. Direct transfer, short explanations, and expansion do not establish stable coverage gains. The repository includes frozen tasks, raw token trajectories, task-level scores, and CPU verification. Next, we should spend saved tokens on extra sampling and independently vary process editing and multi-outcome targets. The unsuccessful attempts are useful because they identify which assumptions do not hold under our tested configurations.
+Our contribution is an auditable chain of experiments. Group-aware rewards work on lists; E16 clearly compresses outputs and gives a positive but unconfirmed coverage signal. Direct transfer, short explanations, and expansion do not establish stable coverage gains. The repository includes frozen tasks, raw token trajectories, task-level scores, and CPU verification. Next, we should spend saved tokens on extra sampling and independently vary process editing and multi-outcome targets. The unsuccessful attempts are useful because they identify which assumptions do not hold under our tested configurations.
 
 Sources/evidence: README.md; docs/REPORT.md; docs/REPRODUCE.md
 

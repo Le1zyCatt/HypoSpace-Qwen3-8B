@@ -41,6 +41,6 @@ No GPU, model weights, or paid API is needed. This checks 144 task-level score r
 - [Report](docs/REPORT.md), [timeline](docs/TIMELINE.md), and [four-speaker presentation script](docs/PRESENTATION.md).
 - [MS-TTRL stage report](docs/MS_TTRL_STAGE.md): teammate-reported findings; incomplete evaluation and replication are explicitly marked.
 - `results/secondary/`: development screening, initial DRP results, aggressive-LR failures, and the later 96-task test.
-- [Sources and license boundaries](THIRD_PARTY.md).
+- [Verification record](docs/VERIFICATION.md) and [source/license boundaries](THIRD_PARTY.md).
 
 Data cutoff: 25 November 2026. No credentials, server addresses, model or adapter weights are included. Stored trajectories support verification; new training/generation is not guaranteed bitwise identical across hardware and software. RR values from different task difficulties or sampling budgets are not a single progress curve.
