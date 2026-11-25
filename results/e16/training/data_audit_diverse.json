@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "kind": "diverse",
+  "examples": 576,
+  "unique_QA": 144,
+  "families": 48,
+  "max_sequence": 5343,
+  "total_tokens": 1362232,
+  "assistant_tokens": 1042288,
+  "all_native_template_roundtrip": true,
+  "all_reasoning_markers_balanced": true,
+  "all_EOS_supervised": true,
+  "truncation": false,
+  "data_sha256": "0b8952f8b2a77c7cce55d981d39e1e072bc188f6944a6dc62edb0b43b9f3b5b8",
+  "time": 1795244958.3397977
+}

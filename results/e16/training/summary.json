@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "steps": 72,
+  "seconds": 665.3289887905121,
+  "metrics": {
+    "train_runtime": 662.8773,
+    "train_samples_per_second": 0.869,
+    "train_steps_per_second": 0.109,
+    "train_loss": 0.6818594907720884,
+    "epoch": 1.0
+  },
+  "time": 1795245688.3292892
+}

@@ -1,0 +1,30 @@
+{
+  "data": "diverse",
+  "end_weight": 3,
+  "arm": "diverse_w",
+  "expected_steps": 72,
+  "primary_checkpoint": 72,
+  "logical_epochs": 4,
+  "physical_preexpanded_epochs": 1,
+  "effective_batch": 8,
+  "lr": 2e-05,
+  "warmup_steps": 4,
+  "scheduler": "cosine72",
+  "quantization": "nf4_double_quant",
+  "compute_dtype": "bfloat16",
+  "r": 32,
+  "alpha": 32,
+  "adapter_dtypes": [
+    "torch.float32"
+  ],
+  "trainable_parameters": 87293952,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "data_sha256": "0b8952f8b2a77c7cce55d981d39e1e072bc188f6944a6dc62edb0b43b9f3b5b8",
+  "implementation_sha256": "d8610239d3877443aea2c01e425ccf1c8a04868881a7000cc93ef1699174500e",
+  "packages": {
+    "torch": "2.11.0",
+    "transformers": "5.8.0",
+    "peft": "0.21.2",
+    "bitsandbytes": "0.50.2"
+  }
+}

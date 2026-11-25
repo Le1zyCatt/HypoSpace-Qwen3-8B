@@ -1,0 +1,914 @@
+{
+  "complete": true,
+  "models": [
+    "base",
+    "previous",
+    "old_sweep_best",
+    "lr2e5_aw2",
+    "replica_s2",
+    "replica_s3"
+  ],
+  "cells": {
+    "8192_base": {
+      "domain_macro": {
+        "VR": 0.8776041666666666,
+        "NR": 0.3828125,
+        "RR": 0.12895446680703582,
+        "tokens_mean": 5038.518229166667,
+        "truncation_rate": 0.044270833333333336,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.0
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.9921875,
+          "NR": 0.3828125,
+          "RR": 0.19262152777777777,
+          "tokens_mean": 4165.640625,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.8671875,
+          "NR": 0.3203125,
+          "RR": 0.06134259259259259,
+          "tokens_mean": 6791.734375,
+          "truncation_rate": 0.1328125,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "boolean": {
+          "VR": 0.7734375,
+          "NR": 0.4453125,
+          "RR": 0.1328992800507371,
+          "tokens_mean": 4158.1796875,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "8192_previous": {
+      "domain_macro": {
+        "VR": 0.8489583333333334,
+        "NR": 0.4713541666666667,
+        "RR": 0.149613494812334,
+        "tokens_mean": 3706.9427083333335,
+        "truncation_rate": 0.013020833333333334,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.0
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.9609375,
+          "NR": 0.4765625,
+          "RR": 0.24249131944444446,
+          "tokens_mean": 3138.953125,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.9375,
+          "NR": 0.4140625,
+          "RR": 0.07175925925925926,
+          "tokens_mean": 4992.8515625,
+          "truncation_rate": 0.0390625,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "boolean": {
+          "VR": 0.6484375,
+          "NR": 0.5234375,
+          "RR": 0.13458990573329824,
+          "tokens_mean": 2989.0234375,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "8192_old_sweep_best": {
+      "domain_macro": {
+        "VR": 0.8619791666666666,
+        "NR": 0.4635416666666667,
+        "RR": 0.1488360705428062,
+        "tokens_mean": 3746.8984375,
+        "truncation_rate": 0.010416666666666666,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.0
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.953125,
+          "NR": 0.4609375,
+          "RR": 0.23255208333333333,
+          "tokens_mean": 3125.4140625,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.9609375,
+          "NR": 0.421875,
+          "RR": 0.0775462962962963,
+          "tokens_mean": 5144.4375,
+          "truncation_rate": 0.03125,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "boolean": {
+          "VR": 0.671875,
+          "NR": 0.5078125,
+          "RR": 0.136409831998789,
+          "tokens_mean": 2970.84375,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "8192_lr2e5_aw2": {
+      "domain_macro": {
+        "VR": 0.8489583333333334,
+        "NR": 0.4453125,
+        "RR": 0.1451101620997488,
+        "tokens_mean": 3993.5989583333335,
+        "truncation_rate": 0.03125,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.0
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.9453125,
+          "NR": 0.4921875,
+          "RR": 0.2372829861111111,
+          "tokens_mean": 3561.84375,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.9140625,
+          "NR": 0.375,
+          "RR": 0.06712962962962962,
+          "tokens_mean": 5213.640625,
+          "truncation_rate": 0.0703125,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "boolean": {
+          "VR": 0.6875,
+          "NR": 0.46875,
+          "RR": 0.13091787055850568,
+          "tokens_mean": 3205.3125,
+          "truncation_rate": 0.0234375,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "8192_replica_s2": {
+      "domain_macro": {
+        "VR": 0.859375,
+        "NR": 0.4635416666666667,
+        "RR": 0.14932756641190625,
+        "tokens_mean": 3992.3385416666665,
+        "truncation_rate": 0.018229166666666668,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.0
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.96875,
+          "NR": 0.453125,
+          "RR": 0.2376736111111111,
+          "tokens_mean": 3657.484375,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.9375,
+          "NR": 0.3984375,
+          "RR": 0.07638888888888888,
+          "tokens_mean": 5165.8515625,
+          "truncation_rate": 0.0546875,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "boolean": {
+          "VR": 0.671875,
+          "NR": 0.5390625,
+          "RR": 0.13392019923571877,
+          "tokens_mean": 3153.6796875,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "8192_replica_s3": {
+      "domain_macro": {
+        "VR": 0.8515625,
+        "NR": 0.4114583333333333,
+        "RR": 0.13659144203078363,
+        "tokens_mean": 4245.091145833333,
+        "truncation_rate": 0.0546875,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.0
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.96875,
+          "NR": 0.4375,
+          "RR": 0.21671006944444443,
+          "tokens_mean": 3697.03125,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.890625,
+          "NR": 0.328125,
+          "RR": 0.0625,
+          "tokens_mean": 5522.0078125,
+          "truncation_rate": 0.09375,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "boolean": {
+          "VR": 0.6953125,
+          "NR": 0.46875,
+          "RR": 0.1305642566479065,
+          "tokens_mean": 3516.234375,
+          "truncation_rate": 0.0703125,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "40960_base": {
+      "domain_macro": {
+        "VR": 0.9192708333333334,
+        "NR": 0.3932291666666667,
+        "RR": 0.13011187421444323,
+        "tokens_mean": 5085.104166666667,
+        "truncation_rate": 0.0,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.0
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.9921875,
+          "NR": 0.3828125,
+          "RR": 0.19262152777777777,
+          "tokens_mean": 4165.640625,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.9921875,
+          "NR": 0.3515625,
+          "RR": 0.06481481481481481,
+          "tokens_mean": 6931.4921875,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "boolean": {
+          "VR": 0.7734375,
+          "NR": 0.4453125,
+          "RR": 0.1328992800507371,
+          "tokens_mean": 4158.1796875,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "40960_previous": {
+      "domain_macro": {
+        "VR": 0.8489583333333334,
+        "NR": 0.4713541666666667,
+        "RR": 0.149613494812334,
+        "tokens_mean": 4133.609375,
+        "truncation_rate": 0.013020833333333334,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.013020833333333334
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.9609375,
+          "NR": 0.4765625,
+          "RR": 0.24249131944444446,
+          "tokens_mean": 3138.953125,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.9375,
+          "NR": 0.4140625,
+          "RR": 0.07175925925925926,
+          "tokens_mean": 6272.8515625,
+          "truncation_rate": 0.0390625,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0390625
+        },
+        "boolean": {
+          "VR": 0.6484375,
+          "NR": 0.5234375,
+          "RR": 0.13458990573329824,
+          "tokens_mean": 2989.0234375,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "40960_old_sweep_best": {
+      "domain_macro": {
+        "VR": 0.8645833333333334,
+        "NR": 0.4635416666666667,
+        "RR": 0.1488360705428062,
+        "tokens_mean": 4003.8333333333335,
+        "truncation_rate": 0.0078125,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.0078125
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.953125,
+          "NR": 0.4609375,
+          "RR": 0.23255208333333333,
+          "tokens_mean": 3125.4140625,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.96875,
+          "NR": 0.421875,
+          "RR": 0.0775462962962963,
+          "tokens_mean": 5915.2421875,
+          "truncation_rate": 0.0234375,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0234375
+        },
+        "boolean": {
+          "VR": 0.671875,
+          "NR": 0.5078125,
+          "RR": 0.136409831998789,
+          "tokens_mean": 2970.84375,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "40960_lr2e5_aw2": {
+      "domain_macro": {
+        "VR": 0.8541666666666666,
+        "NR": 0.4479166666666667,
+        "RR": 0.1454959645688846,
+        "tokens_mean": 4847.442708333333,
+        "truncation_rate": 0.026041666666666668,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.026041666666666668
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.9453125,
+          "NR": 0.4921875,
+          "RR": 0.2372829861111111,
+          "tokens_mean": 3561.84375,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.9296875,
+          "NR": 0.3828125,
+          "RR": 0.06828703703703703,
+          "tokens_mean": 7007.171875,
+          "truncation_rate": 0.0546875,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0546875
+        },
+        "boolean": {
+          "VR": 0.6875,
+          "NR": 0.46875,
+          "RR": 0.13091787055850568,
+          "tokens_mean": 3973.3125,
+          "truncation_rate": 0.0234375,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0234375
+        }
+      },
+      "questions": 96
+    },
+    "40960_replica_s2": {
+      "domain_macro": {
+        "VR": 0.8645833333333334,
+        "NR": 0.4661458333333333,
+        "RR": 0.14971336888104206,
+        "tokens_mean": 4421.9609375,
+        "truncation_rate": 0.013020833333333334,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.013020833333333334
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.96875,
+          "NR": 0.453125,
+          "RR": 0.2376736111111111,
+          "tokens_mean": 3657.484375,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.953125,
+          "NR": 0.40625,
+          "RR": 0.0775462962962963,
+          "tokens_mean": 6454.71875,
+          "truncation_rate": 0.0390625,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0390625
+        },
+        "boolean": {
+          "VR": 0.671875,
+          "NR": 0.5390625,
+          "RR": 0.13392019923571877,
+          "tokens_mean": 3153.6796875,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        }
+      },
+      "questions": 96
+    },
+    "40960_replica_s3": {
+      "domain_macro": {
+        "VR": 0.8541666666666666,
+        "NR": 0.4140625,
+        "RR": 0.13697724449991944,
+        "tokens_mean": 5870.5859375,
+        "truncation_rate": 0.049479166666666664,
+        "missing_close_EOS_rate": 0.0,
+        "native_context_overrun_rate": 0.049479166666666664
+      },
+      "per_domain": {
+        "causal": {
+          "VR": 0.96875,
+          "NR": 0.4375,
+          "RR": 0.21671006944444443,
+          "tokens_mean": 3697.03125,
+          "truncation_rate": 0.0,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0
+        },
+        "3d": {
+          "VR": 0.8984375,
+          "NR": 0.3359375,
+          "RR": 0.0636574074074074,
+          "tokens_mean": 8339.1015625,
+          "truncation_rate": 0.0859375,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0859375
+        },
+        "boolean": {
+          "VR": 0.6953125,
+          "NR": 0.46875,
+          "RR": 0.1305642566479065,
+          "tokens_mean": 5575.625,
+          "truncation_rate": 0.0625,
+          "missing_close_EOS_rate": 0.0,
+          "native_context_overrun_rate": 0.0625
+        }
+      },
+      "questions": 96
+    }
+  },
+  "mean_three_training_seeds_minus_comparator": {
+    "8192_vs_base": {
+      "RR": {
+        "delta": 0.01472192337377709,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          0.0006095531096972574,
+          0.029441495283776823
+        ],
+        "training_seed_deltas": [
+          0.01615569529271299,
+          0.020373099604870437,
+          0.007636975223747816
+        ],
+        "paired_task_signflip_p": 0.01878981210187898,
+        "p_assumption": "Task sign exchangeability under symmetric zero-effect null, conditional on these three trained models and shared sampling seeds.",
+        "Holm_adjusted_p_over_six_tests": 0.11273887261127388
+      },
+      "VR": {
+        "delta": -0.024305555555555563,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.05642361111111116,
+          0.0078125
+        ],
+        "training_seed_deltas": [
+          -0.02864583333333326,
+          -0.01822916666666663,
+          -0.02604166666666663
+        ]
+      },
+      "NR": {
+        "delta": 0.057291666666666664,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          0.015625,
+          0.09722222222222221
+        ],
+        "training_seed_deltas": [
+          0.0625,
+          0.08072916666666669,
+          0.028645833333333315
+        ]
+      },
+      "tokens_mean": {
+        "delta": -961.5086805555555,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -1147.238671875,
+          -761.8878689236109
+        ],
+        "training_seed_deltas": [
+          -1044.9192708333335,
+          -1046.1796875000005,
+          -793.4270833333339
+        ]
+      },
+      "truncation_rate": {
+        "delta": -0.009548611111111112,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.03732638888888889,
+          0.019965277777777776
+        ],
+        "training_seed_deltas": [
+          -0.013020833333333336,
+          -0.026041666666666668,
+          0.010416666666666664
+        ]
+      }
+    },
+    "8192_vs_previous": {
+      "RR": {
+        "delta": -0.005937104631521077,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.024926503388832285,
+          0.011366273178339154
+        ],
+        "training_seed_deltas": [
+          -0.004503332712585184,
+          -0.00028592840042773737,
+          -0.013022052781550358
+        ],
+        "paired_task_signflip_p": 0.4877751222487775,
+        "p_assumption": "Task sign exchangeability under symmetric zero-effect null, conditional on these three trained models and shared sampling seeds.",
+        "Holm_adjusted_p_over_six_tests": 1
+      },
+      "VR": {
+        "delta": 0.004340277777777768,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.02690972222222221,
+          0.03472222222222221
+        ],
+        "training_seed_deltas": [
+          0.0,
+          0.01041666666666663,
+          0.0026041666666666297
+        ]
+      },
+      "NR": {
+        "delta": -0.031249999999999997,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.0763888888888889,
+          0.013020833333333315
+        ],
+        "training_seed_deltas": [
+          -0.026041666666666685,
+          -0.0078125,
+          -0.05989583333333337
+        ]
+      },
+      "tokens_mean": {
+        "delta": 370.06684027777777,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          200.76540798611111,
+          559.3728949652779
+        ],
+        "training_seed_deltas": [
+          286.65625,
+          285.39583333333303,
+          538.1484374999995
+        ]
+      },
+      "truncation_rate": {
+        "delta": 0.021701388888888885,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.002604166666666666,
+          0.049479166666666664
+        ],
+        "training_seed_deltas": [
+          0.018229166666666664,
+          0.005208333333333334,
+          0.041666666666666664
+        ]
+      }
+    },
+    "8192_vs_old_sweep_best": {
+      "RR": {
+        "delta": -0.005159680361993313,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.021277388993247798,
+          0.010061288266569005
+        ],
+        "training_seed_deltas": [
+          -0.0037259084430573963,
+          0.0004914958691000504,
+          -0.01224462851202257
+        ],
+        "paired_task_signflip_p": 0.4604253957460425,
+        "p_assumption": "Task sign exchangeability under symmetric zero-effect null, conditional on these three trained models and shared sampling seeds.",
+        "Holm_adjusted_p_over_six_tests": 1
+      },
+      "VR": {
+        "delta": -0.008680555555555561,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.03645833333333337,
+          0.01822916666666674
+        ],
+        "training_seed_deltas": [
+          -0.01302083333333326,
+          -0.0026041666666666297,
+          -0.01041666666666663
+        ]
+      },
+      "NR": {
+        "delta": -0.023437499999999997,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.06770833333333331,
+          0.018229166666666685
+        ],
+        "training_seed_deltas": [
+          -0.018229166666666685,
+          0.0,
+          -0.05208333333333337
+        ]
+      },
+      "tokens_mean": {
+        "delta": 330.1111111111111,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          153.67599826388903,
+          525.641905381944
+        ],
+        "training_seed_deltas": [
+          246.70052083333348,
+          245.44010416666652,
+          498.19270833333303
+        ]
+      },
+      "truncation_rate": {
+        "delta": 0.024305555555555552,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          0.002604166666666668,
+          0.049479166666666664
+        ],
+        "training_seed_deltas": [
+          0.020833333333333336,
+          0.007812500000000002,
+          0.044270833333333336
+        ]
+      }
+    },
+    "40960_vs_base": {
+      "RR": {
+        "delta": 0.013950318435505484,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.00019312599379914857,
+          0.028686127812061153
+        ],
+        "training_seed_deltas": [
+          0.015384090354441382,
+          0.01960149466659883,
+          0.006865370285476208
+        ],
+        "paired_task_signflip_p": 0.026099739002609975,
+        "p_assumption": "Task sign exchangeability under symmetric zero-effect null, conditional on these three trained models and shared sampling seeds.",
+        "Holm_adjusted_p_over_six_tests": 0.13049869501304986
+      },
+      "VR": {
+        "delta": -0.061631944444444454,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.08854166666666663,
+          -0.03559027777777779
+        ],
+        "training_seed_deltas": [
+          -0.06510416666666674,
+          -0.0546875,
+          -0.06510416666666674
+        ]
+      },
+      "NR": {
+        "delta": 0.049479166666666664,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          0.0078125,
+          0.09027777777777779
+        ],
+        "training_seed_deltas": [
+          0.0546875,
+          0.07291666666666663,
+          0.020833333333333315
+        ]
+      },
+      "tokens_mean": {
+        "delta": -38.44097222222225,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -796.3635416666671,
+          860.8230034722201
+        ],
+        "training_seed_deltas": [
+          -237.66145833333394,
+          -663.143229166667,
+          785.481770833333
+        ]
+      },
+      "truncation_rate": {
+        "delta": 0.029513888888888885,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          0.010416666666666666,
+          0.052083333333333336
+        ],
+        "training_seed_deltas": [
+          0.026041666666666668,
+          0.013020833333333334,
+          0.049479166666666664
+        ]
+      }
+    },
+    "40960_vs_previous": {
+      "RR": {
+        "delta": -0.005551302162385274,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.024576664019512764,
+          0.011684055764851625
+        ],
+        "training_seed_deltas": [
+          -0.00411753024344938,
+          9.987406870806681e-05,
+          -0.012636250312414554
+        ],
+        "paired_task_signflip_p": 0.5158448415515845,
+        "p_assumption": "Task sign exchangeability under symmetric zero-effect null, conditional on these three trained models and shared sampling seeds.",
+        "Holm_adjusted_p_over_six_tests": 1
+      },
+      "VR": {
+        "delta": 0.00868055555555555,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.02256944444444442,
+          0.0390625
+        ],
+        "training_seed_deltas": [
+          0.005208333333333259,
+          0.015625,
+          0.005208333333333259
+        ]
+      },
+      "NR": {
+        "delta": -0.02864583333333333,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.07378472222222221,
+          0.015625
+        ],
+        "training_seed_deltas": [
+          -0.0234375,
+          -0.00520833333333337,
+          -0.057291666666666685
+        ]
+      },
+      "tokens_mean": {
+        "delta": 913.0538194444447,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          28.059309895833785,
+          1922.2500651041662
+        ],
+        "training_seed_deltas": [
+          713.833333333333,
+          288.3515625,
+          1736.9765625
+        ]
+      },
+      "truncation_rate": {
+        "delta": 0.016493055555555556,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.006944444444444444,
+          0.042534722222222224
+        ],
+        "training_seed_deltas": [
+          0.013020833333333334,
+          0.0,
+          0.03645833333333333
+        ]
+      }
+    },
+    "40960_vs_old_sweep_best": {
+      "RR": {
+        "delta": -0.004773877892857511,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.020822591258208532,
+          0.01040071347554499
+        ],
+        "training_seed_deltas": [
+          -0.003340105973921592,
+          0.0008772983382358546,
+          -0.011858826042886766
+        ],
+        "paired_task_signflip_p": 0.4942550574494255,
+        "p_assumption": "Task sign exchangeability under symmetric zero-effect null, conditional on these three trained models and shared sampling seeds.",
+        "Holm_adjusted_p_over_six_tests": 1
+      },
+      "VR": {
+        "delta": -0.00694444444444445,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.03385416666666674,
+          0.01996527777777779
+        ],
+        "training_seed_deltas": [
+          -0.01041666666666674,
+          0.0,
+          -0.01041666666666674
+        ]
+      },
+      "NR": {
+        "delta": -0.02083333333333333,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          -0.0642361111111111,
+          0.020833333333333315
+        ],
+        "training_seed_deltas": [
+          -0.015625,
+          0.0026041666666666297,
+          -0.049479166666666685
+        ]
+      },
+      "tokens_mean": {
+        "delta": 1042.829861111111,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          232.73255208333325,
+          1994.6379991319416
+        ],
+        "training_seed_deltas": [
+          843.6093749999995,
+          418.1276041666665,
+          1866.7526041666665
+        ]
+      },
+      "truncation_rate": {
+        "delta": 0.021701388888888885,
+        "hierarchical_training_seed_and_domain_task_bootstrap_CI95": [
+          0.0,
+          0.04600694444444445
+        ],
+        "training_seed_deltas": [
+          0.018229166666666668,
+          0.005208333333333334,
+          0.041666666666666664
+        ]
+      }
+    }
+  },
+  "training_seeds": [
+    33550336,
+    33550337,
+    33550338
+  ],
+  "new_test_questions": 96,
+  "independent_trajectories": 2304,
+  "logical_candidates": 4608,
+  "budget_conditions_are_prefix_paired": true,
+  "causal_variables": 6,
+  "old_five_variable_results_are_regression_only": true,
+  "selection_guard_passed": true,
+  "bootstrap_draws": 20000,
+  "signflip_draws": 100000,
+  "three_training_seeds_still_limited": true,
+  "pre_test_amendment": "Added old-data dev-selected winner as third comparator before any sealed-test generation; Holm over6comparisons.",
+  "time": 1795425597.291998
+}

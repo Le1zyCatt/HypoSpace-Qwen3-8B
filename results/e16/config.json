@@ -1,0 +1,43 @@
+{
+  "status": "frozen_before_test_generation",
+  "models": [
+    "base",
+    "best"
+  ],
+  "selected_model": "diverse_w",
+  "selected_checkpoint": 72,
+  "selection_data": "Previous12-question dev screen only",
+  "test_families": 36,
+  "per_domain": 12,
+  "N": 4,
+  "budgets": [
+    8192,
+    40960
+  ],
+  "logical_candidates": 576,
+  "independent_long_trajectories": 288,
+  "batch": 1,
+  "thinking": true,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "min_p": 0.0,
+  "precision": "bf16_merged",
+  "tools": false,
+  "history": false,
+  "seed_base": 20261113,
+  "seed_scheme": "20261113+SHA256(confirm:qid:sample_index) first8 hex modulo2^32",
+  "budget_pairing": "Generate one40960 trajectory per model/question/sample; derive8192 counterfactual by exact prefix with same RNG. Budgets are paired, not independent samples.",
+  "context": {
+    "original_config_max": 40960,
+    "documented_native": 32768,
+    "rope": "original_default_unchanged",
+    "yarn": false,
+    "tail_beyond_native_reported": true
+  },
+  "runtime_context_capacity": 41745,
+  "max_prompt_tokens": 777,
+  "model_order": "worker parity counterbalanced",
+  "no_new_training": true,
+  "started": 1795260632.2435586
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "frozen_test_and_model_inputs_preserved": true,
+  "no_train_dev_family_overlap": true,
+  "all_four_cells_same36_questions": true,
+  "all_prefixes_and_seeds_checked": true,
+  "all_metrics_recomputed": true,
+  "independent_trajectories": 288,
+  "logical_scored_candidates": 576,
+  "time": 1795265564.4056888
+}

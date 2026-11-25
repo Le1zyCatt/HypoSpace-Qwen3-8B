@@ -1,0 +1,769 @@
+{
+  "complete": true,
+  "expected_models": 10,
+  "expected_candidates": 480,
+  "models": {
+    "base": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.8125,
+          "NR": 0.3125,
+          "RR4": 0.10185185185185185,
+          "tokens": 6809.6875,
+          "truncation": 0.1875,
+          "unclosed_EOS": 0.0,
+          "seconds": 1611.1215045452118
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.5,
+          "NR": 0.5,
+          "RR4": 0.140625,
+          "tokens": 5286.625,
+          "truncation": 0.125,
+          "unclosed_EOS": 0.0,
+          "seconds": 1335.3098826408386
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.3125,
+          "RR4": 0.11145833333333333,
+          "tokens": 4717.8125,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1147.4705018997192
+        }
+      },
+      "domain_macro": {
+        "VR": 0.7708333333333334,
+        "NR": 0.375,
+        "RR4": 0.11797839506172839,
+        "tokens": 5604.708333333333,
+        "truncation": 0.10416666666666667,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.7708333333333334,
+        "NR": 0.375,
+        "RR4": 0.11797839506172839,
+        "tokens": 5604.708333333333,
+        "truncation": 0.10416666666666667,
+        "unclosed_EOS": 0.0,
+        "seconds": 4093.9018890857697
+      }
+    },
+    "raw_u": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.8125,
+          "NR": 0.375,
+          "RR4": 0.1111111111111111,
+          "tokens": 7020.25,
+          "truncation": 0.1875,
+          "unclosed_EOS": 0.0,
+          "seconds": 1640.7957038879395
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.25,
+          "NR": 0.5625,
+          "RR4": 0.0625,
+          "tokens": 4679.875,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1180.1392648220062
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.5625,
+          "RR4": 0.215625,
+          "tokens": 4325.125,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1039.1165561676025
+        }
+      },
+      "domain_macro": {
+        "VR": 0.6875,
+        "NR": 0.5,
+        "RR4": 0.12974537037037037,
+        "tokens": 5341.75,
+        "truncation": 0.0625,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.6875,
+        "NR": 0.5,
+        "RR4": 0.12974537037037037,
+        "tokens": 5341.75,
+        "truncation": 0.0625,
+        "unclosed_EOS": 0.0,
+        "seconds": 3860.051524877548
+      }
+    },
+    "raw_w": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.8125,
+          "NR": 0.25,
+          "RR4": 0.07407407407407407,
+          "tokens": 6643.25,
+          "truncation": 0.1875,
+          "unclosed_EOS": 0.0,
+          "seconds": 1592.6216185092926
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.5,
+          "NR": 0.5625,
+          "RR4": 0.109375,
+          "tokens": 4569.1875,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1088.5699503421783
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.9375,
+          "NR": 0.5,
+          "RR4": 0.19479166666666667,
+          "tokens": 4227.75,
+          "truncation": 0.0625,
+          "unclosed_EOS": 0.0,
+          "seconds": 1092.3377149105072
+        }
+      },
+      "domain_macro": {
+        "VR": 0.75,
+        "NR": 0.4375,
+        "RR4": 0.12608024691358025,
+        "tokens": 5146.729166666667,
+        "truncation": 0.08333333333333333,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.75,
+        "NR": 0.4375,
+        "RR4": 0.12608024691358025,
+        "tokens": 5146.729166666667,
+        "truncation": 0.08333333333333333,
+        "unclosed_EOS": 0.0,
+        "seconds": 3773.529283761978
+      }
+    },
+    "aggressive_u": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.4375,
+          "RR4": 0.12037037037037036,
+          "tokens": 5565.125,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1404.0336289405823
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.375,
+          "NR": 0.75,
+          "RR4": 0.140625,
+          "tokens": 4194.0625,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1077.748239994049
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.75,
+          "NR": 0.5625,
+          "RR4": 0.14479166666666665,
+          "tokens": 1365.125,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0625,
+          "seconds": 435.41753697395325
+        }
+      },
+      "domain_macro": {
+        "VR": 0.7083333333333334,
+        "NR": 0.5833333333333334,
+        "RR4": 0.13526234567901235,
+        "tokens": 3708.1041666666665,
+        "truncation": 0.0,
+        "unclosed_EOS": 0.020833333333333332
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.7083333333333334,
+        "NR": 0.5833333333333334,
+        "RR4": 0.13526234567901235,
+        "tokens": 3708.1041666666665,
+        "truncation": 0.0,
+        "unclosed_EOS": 0.020833333333333332,
+        "seconds": 2917.1994059085846
+      }
+    },
+    "aggressive_w": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.875,
+          "NR": 0.4375,
+          "RR4": 0.1111111111111111,
+          "tokens": 5064.3125,
+          "truncation": 0.0625,
+          "unclosed_EOS": 0.0,
+          "seconds": 1286.9260869026184
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.5,
+          "NR": 0.5625,
+          "RR4": 0.125,
+          "tokens": 3677.75,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 905.0356433391571
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.75,
+          "NR": 0.5,
+          "RR4": 0.14270833333333333,
+          "tokens": 2368.0625,
+          "truncation": 0.125,
+          "unclosed_EOS": 0.0,
+          "seconds": 828.398264169693
+        }
+      },
+      "domain_macro": {
+        "VR": 0.7083333333333334,
+        "NR": 0.5,
+        "RR4": 0.12627314814814813,
+        "tokens": 3703.375,
+        "truncation": 0.0625,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.7083333333333334,
+        "NR": 0.5,
+        "RR4": 0.12627314814814813,
+        "tokens": 3703.375,
+        "truncation": 0.0625,
+        "unclosed_EOS": 0.0,
+        "seconds": 3020.3599944114685
+      }
+    },
+    "conservative_u": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.9375,
+          "NR": 0.3125,
+          "RR4": 0.10185185185185185,
+          "tokens": 5150.375,
+          "truncation": 0.0625,
+          "unclosed_EOS": 0.0,
+          "seconds": 1272.4495022296906
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.5,
+          "NR": 0.6875,
+          "RR4": 0.15625,
+          "tokens": 3800.8125,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 965.6012115478516
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.9375,
+          "NR": 0.4375,
+          "RR4": 0.13229166666666667,
+          "tokens": 3213.9375,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 798.1069910526276
+        }
+      },
+      "domain_macro": {
+        "VR": 0.7916666666666666,
+        "NR": 0.4791666666666667,
+        "RR4": 0.13013117283950618,
+        "tokens": 4055.0416666666665,
+        "truncation": 0.020833333333333332,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.7916666666666666,
+        "NR": 0.4791666666666667,
+        "RR4": 0.13013117283950618,
+        "tokens": 4055.0416666666665,
+        "truncation": 0.020833333333333332,
+        "unclosed_EOS": 0.0,
+        "seconds": 3036.1577048301697
+      }
+    },
+    "conservative_w": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.4375,
+          "RR4": 0.1388888888888889,
+          "tokens": 4785.75,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1203.1469168663025
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.4375,
+          "NR": 0.625,
+          "RR4": 0.140625,
+          "tokens": 3247.8125,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 878.1311733722687
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.375,
+          "RR4": 0.13229166666666667,
+          "tokens": 3218.1875,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 783.6747763156891
+        }
+      },
+      "domain_macro": {
+        "VR": 0.8125,
+        "NR": 0.4791666666666667,
+        "RR4": 0.1372685185185185,
+        "tokens": 3750.5833333333335,
+        "truncation": 0.0,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.8125,
+        "NR": 0.4791666666666667,
+        "RR4": 0.1372685185185185,
+        "tokens": 3750.5833333333335,
+        "truncation": 0.0,
+        "unclosed_EOS": 0.0,
+        "seconds": 2864.9528665542603
+      }
+    },
+    "diverse_u": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.375,
+          "RR4": 0.1111111111111111,
+          "tokens": 5146.5625,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1231.8650071620941
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.4375,
+          "NR": 0.5625,
+          "RR4": 0.125,
+          "tokens": 3516.8125,
+          "truncation": 0.0625,
+          "unclosed_EOS": 0.0,
+          "seconds": 943.4940626621246
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.5625,
+          "RR4": 0.20729166666666665,
+          "tokens": 4057.5,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 970.1276798248291
+        }
+      },
+      "domain_macro": {
+        "VR": 0.8125,
+        "NR": 0.5,
+        "RR4": 0.14780092592592592,
+        "tokens": 4240.291666666667,
+        "truncation": 0.020833333333333332,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.8125,
+        "NR": 0.5,
+        "RR4": 0.14780092592592592,
+        "tokens": 4240.291666666667,
+        "truncation": 0.020833333333333332,
+        "unclosed_EOS": 0.0,
+        "seconds": 3145.486749649048
+      }
+    },
+    "diverse_w": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.4375,
+          "RR4": 0.15740740740740738,
+          "tokens": 4956.0625,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1192.8779866695404
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.6875,
+          "NR": 0.5,
+          "RR4": 0.1875,
+          "tokens": 3600.9375,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 897.3146502971649
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.4375,
+          "RR4": 0.16354166666666667,
+          "tokens": 3211.375,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 801.18701171875
+        }
+      },
+      "domain_macro": {
+        "VR": 0.8958333333333334,
+        "NR": 0.4583333333333333,
+        "RR4": 0.169483024691358,
+        "tokens": 3922.7916666666665,
+        "truncation": 0.0,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.8958333333333334,
+        "NR": 0.4583333333333333,
+        "RR4": 0.169483024691358,
+        "tokens": 3922.7916666666665,
+        "truncation": 0.0,
+        "unclosed_EOS": 0.0,
+        "seconds": 2891.3796486854553
+      }
+    },
+    "gt": {
+      "per_domain": {
+        "3d": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.25,
+          "RR4": 0.07407407407407407,
+          "tokens": 6242.0,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1489.3587667942047
+        },
+        "boolean": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 0.3125,
+          "NR": 0.5,
+          "RR4": 0.109375,
+          "tokens": 5266.375,
+          "truncation": 0.0625,
+          "unclosed_EOS": 0.0,
+          "seconds": 1247.2322640419006
+        },
+        "causal": {
+          "questions": 4,
+          "candidates": 16,
+          "VR": 1.0,
+          "NR": 0.375,
+          "RR4": 0.14270833333333333,
+          "tokens": 4593.6875,
+          "truncation": 0.0,
+          "unclosed_EOS": 0.0,
+          "seconds": 1082.5785901546478
+        }
+      },
+      "domain_macro": {
+        "VR": 0.7708333333333334,
+        "NR": 0.375,
+        "RR4": 0.10871913580246913,
+        "tokens": 5367.354166666667,
+        "truncation": 0.020833333333333332,
+        "unclosed_EOS": 0.0
+      },
+      "pooled": {
+        "questions": 12,
+        "candidates": 48,
+        "VR": 0.7708333333333334,
+        "NR": 0.375,
+        "RR4": 0.10871913580246914,
+        "tokens": 5367.354166666667,
+        "truncation": 0.020833333333333332,
+        "unclosed_EOS": 0.0,
+        "seconds": 3819.169620990753
+      }
+    }
+  },
+  "comparisons": {
+    "raw_u_minus_base": {
+      "VR": {
+        "delta": -0.08333333333333333,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.2916666666666667,
+          0.125
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": 0.011766975308641977,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.038580246913580245,
+          0.05864197530864198
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    },
+    "raw_w_minus_base": {
+      "VR": {
+        "delta": -0.020833333333333332,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.20833333333333334,
+          0.125
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": 0.008101851851851851,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.03125,
+          0.049768518518518524
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    },
+    "aggressive_u_minus_base": {
+      "VR": {
+        "delta": -0.0625,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.14583333333333334,
+          0.020833333333333332
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": 0.01728395061728395,
+        "paired_stratified_family_bootstrap_CI95": [
+          0.004166666666666667,
+          0.030401234567901236
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    },
+    "aggressive_w_minus_base": {
+      "VR": {
+        "delta": -0.0625,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.14583333333333334,
+          0.020833333333333332
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": 0.008294753086419753,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.03009259259259259,
+          0.045717592592592594
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    },
+    "conservative_u_minus_base": {
+      "VR": {
+        "delta": 0.020833333333333332,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.0625,
+          0.10416666666666667
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": 0.012152777777777778,
+        "paired_stratified_family_bootstrap_CI95": [
+          0.0,
+          0.029513888888888888
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    },
+    "conservative_w_minus_base": {
+      "VR": {
+        "delta": 0.041666666666666664,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.08333333333333333,
+          0.16666666666666666
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": 0.019290123456790122,
+        "paired_stratified_family_bootstrap_CI95": [
+          0.0030864197530864196,
+          0.03935185185185185
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    },
+    "diverse_u_minus_base": {
+      "VR": {
+        "delta": 0.041666666666666664,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.125,
+          0.1875
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": 0.02982253086419753,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.014737654320987656,
+          0.07592592592592592
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    },
+    "diverse_w_minus_base": {
+      "VR": {
+        "delta": 0.125,
+        "paired_stratified_family_bootstrap_CI95": [
+          0.0625,
+          0.20833333333333334
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": 0.05150462962962963,
+        "paired_stratified_family_bootstrap_CI95": [
+          0.021412037037037035,
+          0.08217592592592592
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    },
+    "gt_minus_base": {
+      "VR": {
+        "delta": 0.0,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.125,
+          0.125
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      },
+      "RR": {
+        "delta": -0.009259259259259259,
+        "paired_stratified_family_bootstrap_CI95": [
+          -0.03935185185185185,
+          0.020833333333333332
+        ],
+        "families": 12,
+        "resamples": 10000,
+        "multiple_comparisons_adjusted": false
+      }
+    }
+  },
+  "scope": "exploratory dev screen, N4; not official N=L or sealed test",
+  "time": 1795259583.193506
+}

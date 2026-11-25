@@ -1,0 +1,21 @@
+# Project timeline and report outputs
+
+E16 is the primary case study. Later results remain disclosed. All dates refer to2026 in China Standard Time; early events use supported date ranges.
+
+|Period|Attempt|Measured finding or lesson|Report output|
+|---|---|---|---|
+|Early Nov–12 Nov|Benchmark audit|Trace generation, complete GT, parsing, validation, canonicalization and metrics.|Problem definition and protocol|
+|Early Nov–12 Nov|Local8B/27B and512-token probes|Short budgets exposed truncation and3D format issues; distinguish initialNVFP4 from laterFP8.|Baseline and protocol corrections|
+|By12 Nov|Eight inference conditions|Thinking creates8B headroom; defaultDSH gives no stableRR benefit.|Inference comparison|
+|By12 Nov|GAPO prototypes|20-step updates work; duplicate zero-advantage groups and Boolean leakage motivate fixes.|Implementation and data audit|
+|13–17 Nov|Teammate list-task replication|BF16, G32,200 steps, three training seeds improve list diversity; transfer unconfirmed.|Positive mechanism evidence|
+|16–19 Nov|DirectHypoSpaceRL|24train/6validation/9test; GAPO RR18.74 versusBase18.77.|Transfer boundary|
+|19 Nov|Answer and short-explanationSFT|96 families/288QA; short outputs but degraded validity and flatRR.|Distillation counterexample|
+|19–20 Nov|Student trace audit|Selected traces reveal repetition, faulty deductions and simplest-answer bias.|Motivation for process editing|
+|20–21 Nov|InitialDRPadaptation|48admitted tasks,416source candidates, three36-step arms; no acceptance gate passed.|Initial negative result|
+|21 Nov|Precision bridge andnine-arm screen|Separate deployment behavior and process/ending supervision; selectdiverse_w on12dev tasks.|Diagnostic ablations|
+|21 Nov20:52|E16:36-taskheld-out confirmation|RR15.57→18.28 at8K; output−27.5%; RR not statistically confirmed.|PRIMARY RESULT|
+|21–22 Nov|48-familyLR/answer-weight sweep|Best small-dev gain about0.09pp; aggressiveLR yields empty thoughts or40K tails.|Parameter boundaries|
+|22–23 Nov17:19|192-familyexpansion andthree seeds|756QA,384 steps;96-tasktest shows no confirmed extra benefit.|Secondary confirmation and limitations|
+|24 Nov|Recovery and archival|Verify raw records, latest20adapters, and selected full state after container replacement.|Reproducible evidence and handoff|
+|25 Nov|TeammateMS-TTRLstage|Seed1337/epoch10/two domains:validity up, coverage not better;3Dtest pending.|Self-verification and frequency conflict|

@@ -1,0 +1,8 @@
+{
+  "step": 72,
+  "logical_epoch": 4.0,
+  "elapsed": 662.4826521873474,
+  "parameter_delta_sample_L1": 21.948677104897797,
+  "peak_allocated_GiB": 14.277852058410645,
+  "peak_reserved_GiB": 15.150390625
+}

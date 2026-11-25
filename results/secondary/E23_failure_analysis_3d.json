@@ -1,0 +1,28 @@
+{
+  "base": {
+    "candidates": 24,
+    "empty_thought": 0,
+    "valid": 24
+  },
+  "lr2e5_aw2": {
+    "candidates": 24,
+    "empty_thought": 0,
+    "valid": 22,
+    "wrong_top_projection": 1,
+    "unsupported_blocks": 0,
+    "unparseable": 1
+  },
+  "lr1e4_aw1": {
+    "candidates": 24,
+    "empty_thought": 0,
+    "valid": 13,
+    "unparseable": 11
+  },
+  "lr1e4_aw2": {
+    "candidates": 24,
+    "empty_thought": 24,
+    "valid": 5,
+    "wrong_top_projection": 19,
+    "unsupported_blocks": 2
+  }
+}

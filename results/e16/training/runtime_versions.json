@@ -1,0 +1,19 @@
+{
+  "python": "3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0]",
+  "packages": {
+    "torch": "2.11.0",
+    "transformers": "5.8.0",
+    "peft": "0.21.2",
+    "bitsandbytes": "0.50.2",
+    "datasets": "5.2.0",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.22.2",
+    "tensorboard": "2.21.0",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5"
+  },
+  "upstream_hypospace_commit": "c69e9318577b34b5b896996571aefd4ba6053f58",
+  "weights_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "time": 1795259755.3628757
+}
