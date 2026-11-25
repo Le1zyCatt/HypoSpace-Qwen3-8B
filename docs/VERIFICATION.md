@@ -11,3 +11,6 @@ Completed on25 November2026:
 Analysis verification used both the bundled NumPy environment and local Python3.12/NumPy1.26.4 for matching statistics;canonical parsing was checked with local SymPy1.13.2. Historical training versions,including NumPy2.3.5 and SymPy1.14.0,are pinned separately.
 
 Not performed during packaging:GPU retraining/new model sampling,installation of the complete historical CUDA stack,or re-decoding all archived prefixes with the original tokenizer. The optional prefix re-decoding command is provided;historical audits already checked pairing. Portable GPU entry points preserve the historical protocol but are not presented as newly completed end-to-end GPU runs. MS-TTRL raw teammate archives were not independently re-audited here.
+
+
+The later [server-side verification](SERVER_VERIFICATION.md) independently compared the release with the original experiment archive and reran CPU checks directly on the server.
